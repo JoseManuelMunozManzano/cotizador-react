@@ -10,10 +10,6 @@ const ContenedorResumen = styled.div`
   margin-top: 1rem;
 `;
 
-const ListaNoOrdenada = styled.ul`
-  padding-left: 0;
-`;
-
 const ElementoLista = styled.li`
   padding-bottom: 10px;
 `;
@@ -29,11 +25,11 @@ const Resumen = ({ datos }) => {
   return (
     <ContenedorResumen>
       <h2>Resumen de Cotización</h2>
-      <ListaNoOrdenada>
+      <ul>
         <ElementoLista>Marca: {primeraLetraMayuscula(marca)}</ElementoLista>
         <ElementoLista>Plan: {primeraLetraMayuscula(plan)}</ElementoLista>
         <li>Año del Vehículo: {year}</li>
-      </ListaNoOrdenada>
+      </ul>
     </ContenedorResumen>
   );
 };
