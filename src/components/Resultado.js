@@ -26,7 +26,7 @@ const TextoCotizacion = styled.div`
   margin: 0;
 `;
 
-const Resultado = ({ cotizacion, datos }) => {
+const Resultado = ({ cotizacion }) => {
   return cotizacion === 0 ? (
     <Mensaje>Elige marca, año y tipo de seguro</Mensaje>
   ) : (
