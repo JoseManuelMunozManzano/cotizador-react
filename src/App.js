@@ -38,7 +38,7 @@ function App() {
 
         <Resumen datos={datos} />
 
-        <Resultado cotizacion={cotizacion} />
+        <Resultado cotizacion={cotizacion} datos={datos} />
       </ContenedorFormulario>
     </Contenedor>
   );
